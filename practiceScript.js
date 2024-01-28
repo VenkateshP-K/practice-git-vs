@@ -4,5 +4,8 @@ request.open("Get","https://restcountries.com/v3.1/all")//from which api we can 
 request.send()//getting files from api
 request.onload = function(){
     var res = JSON.parse(request.response)//api given data as string.use parse to get data as json object
-    console.log(res[i])
+    console.log(res)
+}
+for (var i=0;i<res.length;i++){
+    console.log(res[i].status)
 }
