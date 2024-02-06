@@ -7,3 +7,20 @@ git commit -m(first commit)
 git branch -M main(to change the branch into master to main always prefer 'main')
 git push main origin(complete)
 
+//classes 
+class bike{
+       constructor(name,color,mileage,speed){
+        this.name = name
+        this.color = color 
+        this.mileage = mileage
+        this.speed = speed
+       }
+   }
+   var b1 = new bike ("FZ","black","40","120kmph")
+   console.log(b1);
+   var b2 = new bike ("pulsar","45","red&black","100kmph")
+   console.log(b2);
+   var b3 = new bike ("duke","red&white","30","130kmph")
+   b3.speed = ("125kmph");
+   console.log(b3);
+   console.log(b2.name);
